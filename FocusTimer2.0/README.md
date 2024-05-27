@@ -1,0 +1,1 @@
+Não consegui completar o desafio, mas a maioria das funcionalidades estão de acordo com o projeto figma

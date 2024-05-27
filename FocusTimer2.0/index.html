@@ -1,0 +1,54 @@
+<!--
+    POR GENTILEZA, LEIA O README ANTES DE QUALQUER COISA
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br" class="running">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>FocusTimer2.0</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script type="module" src="src/main.js" defer></script>
+</head>
+<body>
+    <div id="app">
+        <div id="cards">
+       <button data-action="playforest" id="card1">
+            <span class="sr-only">Forest</span>
+            <i class="ph ph-tree-evergreen"></i>
+        </button>
+        <button data-action="playrain" id="card2" class="selected">
+            <span class="sr-only">Rain</span>
+            <i class="ph ph-cloud-snow"></i>
+        </button>
+        <button data-action="playcoffee" id="card3">
+            <span class="sr-only">Coffee</span>
+            <i class="ph ph-storefront"></i>
+        </button>
+        <button data-action="playfireplace" id="card4">
+            <span class="sr-only">Fireplace</span>
+            <i class="ph ph-fire"></i>
+        </button> 
+        </div>
+
+        <section id="timer" class="flex">
+            <span id="minutes">00</span>
+            <span>:</span>
+            <span id="seconds">00</span>
+        </section>
+
+        <section id="controls" class="flex">
+            <button data-action="toggleRunning" class="ph ph-play-circle"></button>
+            <button data-action="stop" class="ph ph-stop-circle"></button>
+            <button data-action="plus" class="ph ph-plus-circle"></button>
+            <button data-action="minus" class="ph ph-minus-circle"></button>
+        </section>
+    </div>
+</body>
+</html>
